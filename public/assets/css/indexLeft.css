@@ -1,0 +1,256 @@
+body{
+    width: 820px;
+    margin-left: 30px;
+    font-family: HelveticaNeue;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    font-size: 16px;
+    line-height: normal;
+}
+
+header {
+    margin-bottom: 15px;
+    width: 654.9px;
+    height: 30px;
+    font-size: 22px;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: left;
+    color: #005175;
+}
+
+#borderline{
+    margin-bottom: 25px;
+    width: 820px;
+    height: 1px;
+    background-color: #cacaca;
+}
+
+#fullleft {
+    z-index: 2;
+    position: fixed;
+    float: left;
+    margin-left: 40px;
+    margin-bottom: 97px;
+    padding-top: 34px;
+    width: 470px;
+    height: 522px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+#sectiontitle{
+    margin-left: 39px;
+    margin-right: 40px;
+    width: 391px;
+    height: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    text-align: left;
+    color: #3e3d3f;
+}
+#divider{
+    margin-left: 39.5px;
+    margin-top: 10.5px;
+    margin-right: 39.5px;
+    width: 391px;
+    height: 1px;
+    background-color: #cbcbcb;
+}
+
+.slidermin{
+    float: left;
+    margin-top: 11px;
+    width: 24px;
+    height: 18px;
+    opacity: 0.8;
+    letter-spacing: 0.32px;
+    text-align: left;
+    color: #3e3d3f;
+}
+input[type=range]{
+    -webkit-appearance: none;  /* Override default CSS styles */
+    float: left;
+    margin-top: 17px;
+    margin-left: 5px;
+    width: 260px;
+    height: 8px;
+    border-radius: 100px;
+    background-color: #d8d8d8;
+
+    -moz-apperance: none;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(0.5, #1091cc),
+        color-stop(0.5, #d8d8d8)
+    );
+}
+
+input[type='range']::-webkit-slider-thumb {
+    background-color: #d8d8d8;
+}
+
+.slidermax{
+    float: left;
+    margin-left: 2px;
+    margin-top: 11px;
+    width: 19px;
+    height: 18px;
+    opacity: 0.8;
+    letter-spacing: 0.32px;
+    text-align: left;
+    color: #3e3d3f;
+}
+.currectslidernput{
+    float: left;
+    margin-left: 14px;
+    width: 60px;
+    height: 45px;
+    border-radius: 4px;
+    border: solid 1px #cacaca;
+    background-color: #ffffff;
+    text-align: center;
+    opacity: 0.8;
+    letter-spacing: 0.32px;
+    font-size: 16px;  
+}
+
+.slidercontainer{
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 391px;
+    height: 45px;
+}
+
+.slidertitle{
+    margin-left: 40px;
+    margin-top: 35.5px;
+    margin-right: 303px;
+    width: 133px;
+    height: 17px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.21;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #3e3d3f; 
+}
+
+#loaninput{
+    margin-left: 40px;
+    width: 390px;
+    height: 45px;
+    border-radius: 4px;
+    border: solid 1px #a6a6a6;
+    background-color: #ffffff;
+    letter-spacing: 0.32px;
+    text-align: left;
+    text-indent: 25px;
+    color: #3e3d3f;
+}
+
+.numericinput{
+    width: 185px;
+    height: 45px;
+    border-radius: 4px;
+    border: solid 1px #a6a6a6;
+    background-color: #ffffff;
+    letter-spacing: 0.32px;
+    text-align: left;
+    text-indent: 25px;
+    color: #3e3d3f;
+}
+
+.numericinput,.inputtitle,#annualnumericinput{
+    float: left;   
+}
+
+.inputtitle{
+    margin-bottom: 5px;
+    margin-top: 20px;
+    width: 120px;
+    height: 17px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.21;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #3e3d3f;
+}
+
+#loaninputicon {
+    position: relative;
+    letter-spacing: 0.32px;
+    text-align: left;
+    color: #3e3d3f;
+}
+  
+#loaninputicon:before {
+    position: absolute;
+    top: 61px;
+    content:"$";
+    left: 55px;
+}
+
+#annualtaxinput{
+    margin-left: 40px;
+    margin-right: 12px;
+    position: relative;
+    letter-spacing: 0.32px;
+    text-align: left;
+    color: #3e3d3f;
+}
+
+#annualtaxinput:before {
+    position: absolute;
+    top: 15px;
+    content:"$";
+    left: -10px;
+}
+
+#annualtaxtitle{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#annualInsurancetitle{
+    margin-left: 40px;
+}
+
+#annualInsuranceinput{
+    margin-right: 40px;
+    position: relative;
+    letter-spacing: 0.32px;
+    text-align: left;
+    color: #3e3d3f;
+}
+
+#annualInsuranceinput:before {
+    position: absolute;
+    top: 15px;
+    content:"$";
+    left: -10px;
+}
+
+#loantitle{
+    margin-left: 40px;
+}
+
+#caluclatebutton{
+    margin-left: 40px;
+    margin-top: 20px;
+    float: left;
+    width: 390px;
+    height: 45px;
+    border-radius: 4px;
+    background-color: #0077c0;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #ffffff;
+}
+

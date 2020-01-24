@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mortgage Calculator</title>
+        <link rel="stylesheet" type="text/css" href="./assets/css/indexLeft.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/indexRight.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>Mortgage Calculator</header>
+        <section id='borderline'></section>
+        <section id="fullleft">
+            <section id="sectiontitle">Change values to calculate your results</section>
+            <section id="divider"></section>
+            <section class="slidertitle" id="yearofmortgagetitle">Years of mortgage</section>
+            <div class="slidercontainer" id="yearofmortgageslidercontainer">
+                <section class="slidermin" id="yearofmortgagemin">1</section>
+                <input type="range" min="1" max="40" value="20" class="slider" id="yearofmortgageslider">
+                <section class="slidermax" id="yearofmortgagemax">40</section>
+                <input class="currectslidernput" id="currectyear" type="number" value="20" disabled>
+            </div>
+            <section class="slidertitle" id="interesttitle">Rate of interest (%)</section>
+            <div class="slidercontainer" id="interestslidercontainer">
+                <section class="slidermin" id="interestmin">0.1</section>
+                <input type="range" min="0.1" max="10" value="5" step="0.1" class="slider" id="interestslider">
+                <section class="slidermax" id="interestmax">10</section>
+                <input class="currectslidernput" id="currectinterest" type="number" value="5.5" disabled>
+            </div>
+            <section class="inputtitle" id="loantitle">Loan Amount</section>
+            <div id="loaninputicon">
+                <input id="loaninput" type="number" required>
+            </div>
+            <div id="annualinputtitle">
+                <section class="inputtitle" id="annualtaxtitle">Annual Tax</section>
+                <section class="inputtitle" id="annualInsurancetitle">Annual Insurance</section>
+            </div>
+            <div id="annualnumericinput">
+                <div class="numericinput" id="annualtaxinput">
+                    <input class="numericinput" type="number" required>
+                </div>
+                <div class="numericinput" id="annualInsuranceinput">
+                    <input class="numericinput" type="number" required>
+                </div>
+                
+            </div>
+            <input type="button" value="CALCULATE" id="caluclatebutton">
+        </section>
+        <section id="fullright">
+            <section id="rightsectiontitle">Your results</section>
+            <section id="principleinteresttitle">Principle & Interest</section>
+            <section class="dollaramount">$ - -</section>
+            <section id="taxtitle">Tax</section>
+            <section class="dollaramount">$ - -</section>
+            <section id="insurancetitle">Insurance</section>
+            <section class="dollaramount">$ - -</section>
+            <section id="rightdivider"></section>
+            <section id="totalmonthlytitle">Total Monthly Payment</section>
+            <section class="dollaramount" id="totaldollaramount">$ - -</section>
+        </section>
+        <script src="./assets/script/script.js"></script>
+    </body>
+</html>

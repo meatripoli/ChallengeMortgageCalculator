@@ -1,0 +1,92 @@
+#fullright{
+    z-index: 1;
+    float: left;
+    position: relative;
+    width: 298px;
+    height: 440px;
+    background-color: #eaf6fa;
+    margin-top: 45px;
+    margin-left: 500px;
+    margin-right: 88px;
+    font-family: HelveticaNeue;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+#rightsectiontitle{
+    width: 186px;
+    height: 30px;    
+    font-size: 22px;
+    line-height: 1.67;
+    text-align: left;
+    color: #3e3d3f;
+    margin-left: 66px;
+    margin-top: 36px;
+}
+#principleinteresttitle{
+    width: 118px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 2.14;
+    text-align: left;
+    color: #3e3d3f;
+    margin-top: 29px;
+    margin-left: 68px;
+}
+#taxtitle{
+    width: 23px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 2.14;
+    text-align: left;
+    color: #3e3d3f;
+    margin-left: 68px;
+    margin-top: 20px;
+}
+#insurancetitle{
+    width: 62px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 2.14;
+    text-align: left;
+    color: #3e3d3f;
+    margin-left: 68px;
+    margin-top: 20px;
+}
+#rightdivider{
+    width: 192px;
+    height: 1px;
+    border: solid 1px #cbcbcb;
+    background-color: #cbcbcb;
+    margin-top: 20px;
+    margin-left: 66px;
+}
+#totalmonthlytitle{
+    width: 186px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 1.67;
+    text-align: left;
+    color: #3e3d3f;
+    margin-left: 66px;
+    margin-top: 20px;
+}
+.dollaramount{
+    width: 35px;
+    height: 30px;
+    opacity: 0.2;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.67;
+    text-align: left;
+    color: #3e3d3f;
+    margin-left: 68px;
+}
+#totaldollaramount{
+    width: 43px;
+    font-size: 22px;
+    line-height: 1.36;
+    margin-left: 66px;
+}
