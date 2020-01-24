@@ -1,3 +1,7 @@
+#fullrightmobile{
+    visibility: hidden;
+}
+
 #fullright{
     z-index: 1;
     float: left;

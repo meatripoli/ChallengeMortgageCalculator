@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>Mortgage Calculator</title>
         <link rel="stylesheet" type="text/css" href="./assets/css/indexLeft.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/indexRight.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/indexMobile.css">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -46,7 +47,7 @@
             </div>
             <input type="button" value="CALCULATE" id="caluclatebutton">
         </section>
-        <section id="fullright">
+        <section id="fullright" >
             <section id="rightsectiontitle">Your results</section>
             <section id="principleinteresttitle">Principle & Interest</section>
             <section class="dollaramount">$ - -</section>
@@ -57,6 +58,28 @@
             <section id="rightdivider"></section>
             <section id="totalmonthlytitle">Total Monthly Payment</section>
             <section class="dollaramount" id="totaldollaramount">$ - -</section>
+        </section>
+        <section id="fullrightmobile">
+            <section id="rightsectiontitlemobile">Your results</section>
+            <div class="mobilesections">
+                <section id="principleinteresttitlemobile">Principle & Interest</section>
+                <section class="dollaramountmobile">$ - -</section>
+                <section class="rightdividermobile"></section>
+            </div>
+            <div class="mobilesections">
+                <section id="taxtitlemobile">Tax</section>
+                <section class="dollaramountmobile">$ - -</section>
+                <section class="rightdividermobile"></section>
+            </div>
+            <div class="mobilesections">
+                <section id="insurancetitlemobile">Insurance</section>
+                <section class="dollaramountmobile">$ - -</section>
+                <section class="rightdividermobile"></section>
+            </div>
+            <div class="mobilesections">
+                <section id="totalmonthlytitlemobile">Total Monthly Payment</section>
+                <section class="dollaramountmobile" id="totaldollaramountmobile">$ - -</section>
+            </div>
         </section>
         <script src="./assets/script/script.js"></script>
     </body>

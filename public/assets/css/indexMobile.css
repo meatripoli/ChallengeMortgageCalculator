@@ -1,0 +1,357 @@
+@media screen and (max-width:450px){
+    body{
+        width: 340px;
+    }
+    header{
+        width: 220px;
+        height: 24px;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.2;
+        letter-spacing: 0.5px;
+        text-align: left;
+        color: #006ea0;
+        margin-left: 15px;
+        padding-top: 23px;
+    }
+    #borderline{
+        width: 300px;
+        height: 2px;
+        border: solid 1px #cacaca;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    #fullleft {
+        margin-top: 5px;
+        position: relative;
+        float: left;
+        width: 300px;
+        height: 431px;
+        object-fit: contain;
+        border-radius: 4px;
+        box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        margin-left: 10px;
+    }
+
+    #sectiontitle{
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 260px;
+        height: 20px;
+        font-size: 12px;
+        line-height: 1.67;
+        letter-spacing: 0.21px;
+        text-align: left;
+        color: #3e3d3f;
+    }
+    #divider{
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-right: 20px;
+        background-color: #cbcbcb;
+        width: 260px;
+        height: 2px;
+        border: solid 1px #cacaca;
+    }
+    
+    .slidermin{
+        float: left;
+        margin-left: -20px;
+        margin-top: 11px;
+        width: 9px;
+        height: 16px;
+        font-size: 14px;
+        letter-spacing: 0.28px;
+        text-align: left;
+        color: #3e3d3f;
+    }
+
+    input[type=range]{
+        -webkit-appearance: none;  /* Override default CSS styles */
+        float: left;
+        margin-top: 13px;
+        width: 153.6px;
+        height: 8px;
+        border-radius: 100px;
+        background-color: #cacaca;
+        -moz-apperance: none;
+        background-image: -webkit-gradient(
+            linear,
+            left top,
+            right top,
+            color-stop(0.5, #1091cc),
+            color-stop(0.5, #d8d8d8)
+        );
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+        background-color: #d8d8d8;
+    }
+    
+    .slidermax{
+        float: left;
+        margin-left: 2px;
+        margin-top: 11px;
+        width: 17px;
+        height: 16px;
+        font-size: 14px;
+        letter-spacing: 0.28px;
+        text-align: left;
+        color: #3e3d3f;
+    }
+    .currectslidernput{
+        float: left;
+        margin-left: 10px;
+        text-align: center;
+        opacity: 0.8;
+        letter-spacing: 0.32px;
+        font-size: 16px;  
+        width: 50px;
+        height: 40px;
+        border-radius: 4px;
+        border: solid 1px #a6a6a6;
+        background-color: #ffffff;
+    }
+    
+    .slidercontainer{
+        margin-right: 40px;
+        margin-left: 40px;
+        width: 391px;
+        height: 45px;
+    }
+    
+    .slidertitle{
+        margin-left: 20px;
+        margin-top: 15px;
+        margin-right: 166px;
+        width: 114px;
+        height: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1.67;
+        letter-spacing: 0.17px;
+        text-align: left;
+        color: #3e3d3f;
+    }
+
+    .numericinput,.inputtitle,#annualnumericinput{
+        float: left;   
+    }
+
+    .inputtitle{
+        margin-top: 20px;
+        width: 103px;
+        height: 15px;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3e3d3f;
+    }
+
+    #loantitle{
+        margin-left: 20px;
+    }
+    
+    #loaninput{
+        margin-left: 20px;
+        text-indent: 25px;
+        color: #3e3d3f;
+        width: 260px;
+        height: 40px;
+        border-radius: 4px;
+        border: solid 1px #a6a6a6;
+        background-color: #ffffff;
+    }
+
+    #loaninputicon {
+        position: relative;
+        letter-spacing: 0.32px;
+        text-align: left;
+        color: #3e3d3f;
+    }
+      
+    #loaninputicon:before {
+        position: absolute;
+        top: 53px;
+        content:"$";
+        left: 35px;
+    }
+    
+    .numericinput{
+        width: 120px;
+        height: 40px;
+        border-radius: 4px;
+        border: solid 1px #a6a6a6;
+        background-color: #ffffff;
+        letter-spacing: 0.32px;
+        text-align: left;
+        text-indent: 25px;
+        color: #3e3d3f;
+    }
+    
+    #annualtaxtitle{
+        margin-left: 20px;
+        margin-right: -5px;
+    }
+
+    #annualtaxinput{
+        margin-left: 20px;
+        margin-right: 12px;
+        position: relative;
+        letter-spacing: 0.32px;
+        text-align: left;
+        color: #3e3d3f;
+        width: 120px;
+        height: 40px;
+        border-radius: 4px;
+        border: solid 1px #a6a6a6;
+        background-color: #ffffff;
+    }
+    
+    #annualtaxinput:before {
+        position: absolute;
+        top: 14px;
+        content:"$";
+        left: -10px;
+    }
+
+    #annualInsuranceinput{
+        margin-right: 20px;
+        position: relative;
+        letter-spacing: 0.32px;
+        text-align: left;
+        color: #3e3d3f;
+    }
+    
+    #annualInsuranceinput:before {
+        position: absolute;
+        top: 14px;
+        content:"$";
+        left: -10px;
+    }
+    
+    #caluclatebutton{
+        margin-left: 20px;
+        margin-top: 20px;
+        float: left;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.58px;
+        text-align: center;
+        color: #ffffff;
+        width: 260px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: #0077c0;
+    }
+    
+    #fullright {
+        visibility: hidden;
+    }
+
+    #fullrightmobile{  
+        visibility: visible;  
+        position: relative;
+        float: left;
+        background-color: yellow;
+        width: 300px;
+        height: 289px; 
+        margin-left: 10px;
+        /*background-color: #eaf6fa;*/
+        margin-top: -580px;
+    }
+    .mobilesections{
+    }
+
+    #rightsectiontitlemobile{
+        margin-left: 20px;
+        margin-top: 5px;
+        width: 108px;
+        height: 30px;
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3e3d3f;
+    }  
+    
+    #principleinteresttitlemobile{
+        margin-top: 18px;
+        margin-left: 21px;
+        width: 115px;
+        height: 14px;
+        font-family: SFUIDisplay;
+        font-size: 12px;
+        text-align: left;
+        color: #3e3d3f;
+    }
+
+    #taxtitlemobile{
+        margin-left: 21px;
+        margin-top: 16px;
+        width: 20px;
+        height: 14px;
+        font-family: SFUIDisplay;
+        font-size: 12px;
+        text-align: left;
+        color: #3e3d3f;
+    }
+
+    #insurancetitlemobile{
+        margin-left: 21px;
+        margin-top: 16px;
+        width: 51px;
+        height: 14px;
+        font-family: SFUIDisplay;
+        font-size: 12px;
+        text-align: left;
+        color: #3e3d3f;
+    }
+
+    #totalmonthlytitlemobile{
+        margin-left: 21px;
+        margin-top: 19px;
+        width: 150px;
+        height: 14px;
+        font-family: SFUIDisplay;
+        font-size: 12px;
+        text-align: left;
+        color: #3e3d3f;
+    }
+
+    .rightdividermobile{
+        margin-top: 15px;
+        margin-left: 21px;
+        width: 260px;
+        height: 1px;
+        border: solid 1px #b2b2b2;
+        background-color: #b2b2b2;
+    }
+
+    .dollaramountmobile{
+        margin-left: 0px;
+        width: 59px;
+        height: 16px;
+        font-family: SFUIDisplay;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: right;
+        color: #3e3d3f;
+    }
+
+    #totaldollaramountmobile{
+        float: left;
+        margin-left: 0px;
+        width: 76px;
+        height: 21px;
+        font-family: SFUIDisplay;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: right;
+        color: #3e3d3f;
+    }
+
+
+}
