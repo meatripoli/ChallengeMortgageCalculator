@@ -5,7 +5,7 @@
 #fullright{
     z-index: 1;
     float: left;
-    position: relative;
+    position: fixed;
     width: 298px;
     height: 440px;
     background-color: #eaf6fa;
