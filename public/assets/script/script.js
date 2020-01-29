@@ -30,7 +30,6 @@ $('#loaninput').change(function () {
         $('#mandatoryfieldloan').text('Mandatory Field');
     }
     else{
-        //$('#mandatoryfieldloan').css('color', '#3e3d3f');
         $('#mandatoryfieldloan').empty();
     }
 });
@@ -40,7 +39,6 @@ $('#taxinput').change(function () {
         $('#mandatoryfieldtax').text('Mandatory Field');
     }
     else{
-        //$('#mandatoryfieldtax').css('color', '#3e3d3f');
         $('#mandatoryfieldtax').empty();
     }
 });
@@ -50,7 +48,6 @@ $('#insuranceinput').change(function () {
         $('#mandatoryfieldinsurance').text('Mandatory Field');
     }
     else{
-        //$('#mandatoryfieldinsurance').css('color', '#3e3d3f');
         $('#mandatoryfieldinsurance').empty();
     }
 });
@@ -75,10 +72,22 @@ $('#caluclatebutton').on('click', function (event) {
     }
     else{
         console.log('filled in');
-        $('#caluclatebutton').val('RECALCULATE');
-        $.post("/", newObj)
-            .then(function(data) {
-            location.reload();
+        console.log(' is this a post');
+        $.ajax({
+            type: "POST",
+            url: '/',
+            data: newObj
+        }).then(function(data) {
+            ////dont recreate the html on the server 
+            ///side but just populate the info on the page itself
+                $('#principalamount, #principalamountmobile').text(data.monthlyMortgagePayment);
+                $('#taxamount, #taxamountmobile').text(data.monthlyTaxPayment);
+                $('#insuranceamount, #insuranceamountmobile').text(data.monthlyInsurancePayment);
+                $('#totaldollaramount, #totaldollaramountmobile').text(data.monthlyTotal);
+                $('#caluclatebutton').val('RECALCULATE');
+                $('#principalamount, #principalamountmobile','#taxamount, #taxamountmobile',
+                '#insuranceamount, #insuranceamountmobile','#totaldollaramount, #totaldollaramountmobile'
+                ).css("color", "#3e3d3f")
         });
     }
 })

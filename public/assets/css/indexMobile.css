@@ -175,12 +175,6 @@
     input[type=number]:valid {
         border: 1px solid #a6a6a6;
     }
-
-    .mandatoryfield:after {
-        content:"Mandatory Field";
-        color: red;
-        font-size: 12px;
-    }
     
     #mandatoryfieldloan{
         margin-left: 20px;
@@ -362,7 +356,7 @@
 
     .dollaramountmobile{
         margin-left: 0px;
-        width: 59px;
+        width: 108px;
         height: 16px;
         font-family: SFUIDisplay;
         font-size: 14px;
@@ -374,7 +368,7 @@
     #totaldollaramountmobile{
         float: left;
         margin-left: 0px;
-        width: 76px;
+        width: 108px;
         height: 21px;
         font-family: SFUIDisplay;
         font-size: 18px;
