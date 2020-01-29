@@ -190,6 +190,10 @@ input[type=number]:valid {
     color: #3e3d3f;
 }
 
+#annualInsuranceinput,#annualtaxinput{
+    margin-bottom: 5px;
+}
+
 .numericinput,.inputtitle,#annualnumericinput{
     float: left;   
 }

@@ -54,6 +54,10 @@ $('#insuranceinput').change(function () {
 
 //on button click send data to server to handle the math
 $('#caluclatebutton').on('click', function (event) {
+    if(screen.width<=450){
+        console.log('show hidden field')
+        $('#fullrightmobile').css({'visibility':'visible'})
+    }
     console.log("click calculate button");
     event.preventDefault();
     var newObj = {
@@ -80,14 +84,12 @@ $('#caluclatebutton').on('click', function (event) {
         }).then(function(data) {
             ////dont recreate the html on the server 
             ///side but just populate the info on the page itself
-                $('#principalamount, #principalamountmobile').text(data.monthlyMortgagePayment);
-                $('#taxamount, #taxamountmobile').text(data.monthlyTaxPayment);
-                $('#insuranceamount, #insuranceamountmobile').text(data.monthlyInsurancePayment);
-                $('#totaldollaramount, #totaldollaramountmobile').text(data.monthlyTotal);
+                $('#principalamount, #principalamountmobile').text('$ '+data.monthlyMortgagePayment);
+                $('#taxamount, #taxamountmobile').text('$ '+data.monthlyTaxPayment);
+                $('#insuranceamount, #insuranceamountmobile').text('$ '+data.monthlyInsurancePayment);
+                $('#totaldollaramount, #totaldollaramountmobile').text('$ '+data.monthlyTotal);
                 $('#caluclatebutton').val('RECALCULATE');
-                $('#principalamount, #principalamountmobile','#taxamount, #taxamountmobile',
-                '#insuranceamount, #insuranceamountmobile','#totaldollaramount, #totaldollaramountmobile'
-                ).css("color", "#3e3d3f")
+                $('#principalamount,#taxamount,#insuranceamount,#totaldollaramount').css({'color':'#3e3d3f','opacity': 'unset'})
         });
     }
 })
